@@ -174,6 +174,28 @@ a:hover { text-decoration: underline; }
     input, textarea { font-size: 16px; }
     button { font-size: 16px; }
 }
+.section-switch {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px auto;
+}
+
+.section-switch button {
+    background-color: #123456;
+    color: white;
+    border: 1px solid #5b7898;
+    padding: 10px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Verdana, sans-serif;
+}
+
+.section-switch button:hover {
+    background-color: #245078;
+}
+
 </style>
 </head>
 
@@ -185,6 +207,18 @@ a:hover { text-decoration: underline; }
 <div class="language-switch">
     <button type="button" id="english-button" class="active" onclick="setLanguage('en')">English</button>
     <button type="button" id="thai-button" onclick="setLanguage('th')">ไทย</button>
+</div>
+
+<div class="section-switch">
+    <button type="button" onclick="location.href='#basic-premise'">
+        Basic Premise
+    </button>
+    <button type="button" onclick="location.href='#going-deeper'">
+        Going Deeper
+    </button>
+    <button type="button" onclick="location.href='#peace'">
+        Peace
+    </button>
 </div>
 
 <div class="image-container">
@@ -200,9 +234,7 @@ a:hover { text-decoration: underline; }
     <p>I created this site to share what I've learned through my own experience and to offer a simple path for anyone who wants to develop greater calmness, awareness, and control over their thoughts and resulting actions.</p>
 </section>
 
-<h2>Basic Premise <span class="info-icon" onclick="toggleDescription('premise-description')">ⓘ</span></h2>
-<p id="premise-description" class="description">
-    This website's intention is to share the experiences I have personally encountered during my meditation journey. I would like to share what I have learned and experienced, with the hope that it may also help you on your own journey through life.
+<h2 id="basic-premise">Basic Premise <span class="info-icon" onclick="toggleDescription('premise-description')">ⓘ</span></h2>    This website's intention is to share the experiences I have personally encountered during my meditation journey. I would like to share what I have learned and experienced, with the hope that it may also help you on your own journey through life.
     <br><br>Best regards,<br>Charlie Robert
 </p>
 
@@ -312,8 +344,7 @@ a:hover { text-decoration: underline; }
     <a href="#support" class="support-button">Support / Donate</a>
 </div>
 
-<h2>Going Deeper — The Advanced Journey</h2>
-<img src="AdvancedJourney.png" alt="The Advanced Journey" class="journey-image">
+<h2 id="going-deeper">Going Deeper — The Advanced Journey</h2><img src="AdvancedJourney.png" alt="The Advanced Journey" class="journey-image">
 
 <h3>1. The Being <span class="info-icon" onclick="toggleDescription('being-description')">ⓘ</span></h3>
 <p id="being-description" class="description">This is the state that you carry into your everyday life.</p>
@@ -420,7 +451,7 @@ a:hover { text-decoration: underline; }
     </section>
 <br><br>
 
-    <section>
+    <section id="peace">
         <h2>PEACE:</h2>
         
 <img src="Peace.png" alt="Peace" style="display:block; max-width:300px; width:100%; height:auto; margin:0 auto 30px;">
